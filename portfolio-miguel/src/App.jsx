@@ -1,9 +1,19 @@
+import {
+  FaHome,
+  FaUser,
+  FaCode,
+  FaProjectDiagram,
+  FaEnvelope,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
 import heroImg from "./assets/hero.png";
 import "./App.css";
 
 import { useEffect, useState } from "react";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
   const [active, setActive] = useState("hero");
 
   const scrollToSection = (id) => {
@@ -18,10 +28,11 @@ function App() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActive(entry.target.id);
+            entry.target.classList.add("visible");
           }
         });
       },
-      { threshold: 0.6 },
+      { threshold: 0.3 },
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -41,31 +52,35 @@ function App() {
             className={active === "hero" ? "active" : ""}
             onClick={() => scrollToSection("#hero")}
           >
-            Home
+            <FaHome /> Home
           </li>
+
           <li
             className={active === "about" ? "active" : ""}
             onClick={() => scrollToSection("#about")}
           >
-            About
+            <FaUser /> About
           </li>
+
           <li
             className={active === "tech" ? "active" : ""}
             onClick={() => scrollToSection("#tech")}
           >
-            Tech
+            <FaCode /> Tech
           </li>
+
           <li
             className={active === "projects" ? "active" : ""}
             onClick={() => scrollToSection("#projects")}
           >
-            Projects
+            <FaProjectDiagram /> Projects
           </li>
+
           <li
             className={active === "contact" ? "active" : ""}
             onClick={() => scrollToSection("#contact")}
           >
-            Contact
+            <FaEnvelope /> Contact
           </li>
         </ul>
       </nav>
@@ -244,16 +259,56 @@ function App() {
 
       <section id="contact" className="section contact-section">
         <div className="contact-container">
-          <h2 className="section-title">Get In Touch</h2>
+          <h2 className="section-title-contacts">Get In Touch</h2>
           <p>I'm always open to new opportunities and interesting projects.</p>
 
           <div className="contact-buttons">
-            <button>📧 john@example.com</button>
-            <button>🐙 GitHub</button>
-            <button>💼 LinkedIn</button>
+            <button onClick={() => setShowModal(true)}>
+              <FaEnvelope /> Gmail
+            </button>
+
+            <a
+              href="https://github.com/miguelmvpinto"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-link"
+            >
+              <FaGithub /> GitHub
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/miguepinto/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-link"
+            >
+              <FaLinkedin /> LinkedIn
+            </a>
           </div>
         </div>
       </section>
+
+      {showModal && (
+        <div className="modal-overlay" onClick={() => setShowModal(false)}>
+          <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <h3>Send me an email</h3>
+
+            <input type="text" placeholder="Your name" />
+            <input type="email" placeholder="Your email" />
+            <textarea placeholder="Your message"></textarea>
+
+            <div className="modal-buttons">
+              <button className="btn-primary">Send</button>
+              <button
+                className="btn-secondary"
+                onClick={() => setShowModal(false)}
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       <footer className="footer">
         <p>&copy; 2026 Miguel Pinto. All rights reserved.</p>
