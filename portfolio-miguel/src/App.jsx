@@ -6,6 +6,8 @@ import {
   FaEnvelope,
   FaGithub,
   FaLinkedin,
+  FaChartLine,
+  FaFileAlt,
 } from "react-icons/fa";
 import heroImg from "./assets/hero.png";
 import "./App.css";
@@ -13,6 +15,8 @@ import "./App.css";
 import { useEffect, useState } from "react";
 
 function App() {
+  const [showCV, setShowCV] = useState(false);
+  const [events, setEvents] = useState([]);
   const [showModal, setShowModal] = useState(false);
   const [active, setActive] = useState("hero");
 
@@ -22,6 +26,20 @@ function App() {
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
+
+    fetch("https://api.github.com/users/miguelmvpinto/events")
+      .then((res) => {
+        if (!res.ok) throw new Error("GitHub API error");
+        return res.json();
+      })
+      .then((data) => {
+        if (Array.isArray(data)) {
+          setEvents(data.slice(0, 6));
+        }
+      })
+      .catch((err) => {
+        console.log("GitHub API failed:", err);
+      });
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -74,6 +92,13 @@ function App() {
             onClick={() => scrollToSection("#projects")}
           >
             <FaProjectDiagram /> Projects
+          </li>
+
+          <li
+            className={active === "activity" ? "active" : ""}
+            onClick={() => scrollToSection("#activity")}
+          >
+            <FaChartLine /> Activity
           </li>
 
           <li
@@ -257,6 +282,36 @@ function App() {
         </div>
       </section>
 
+      <section id="activity" className="section github-section">
+        <div className="github-container">
+          <h2 className="section-title">GitHub Activity</h2>
+
+          <div className="github-card">
+            <img
+              src="https://github-readme-activity-graph.vercel.app/graph?username=miguelmvpinto&theme=react-dark"
+              alt="GitHub Activity"
+            />
+          </div>
+
+          <div className="github-activity">
+            <h3>Recent Activity</h3>
+
+            {events.length === 0 ? (
+              <p>Loading activity...</p>
+            ) : (
+              <div className="activity-list">
+                {events.map((event, index) => (
+                  <div key={index} className="activity-card">
+                    <span className="activity-type">{event.type}</span>
+                    <p>{event.repo?.name}</p>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      </section>
+
       <section id="contact" className="section contact-section">
         <div className="contact-container">
           <h2 className="section-title-contacts">Get In Touch</h2>
@@ -284,6 +339,10 @@ function App() {
             >
               <FaLinkedin /> LinkedIn
             </a>
+
+            <button className="btn-secondary" onClick={() => setShowCV(true)}>
+              <FaFileAlt /> Curriculum
+            </button>
           </div>
         </div>
       </section>
@@ -306,6 +365,18 @@ function App() {
                 Cancel
               </button>
             </div>
+          </div>
+        </div>
+      )}
+
+      {showCV && (
+        <div className="modal-overlay" onClick={() => setShowCV(false)}>
+          <div className="modal cv-modal" onClick={(e) => e.stopPropagation()}>
+            <button className="close-btn" onClick={() => setShowCV(false)}>
+              ✖
+            </button>
+
+            <iframe src="/CV_2026.pdf" title="CV" width="100%" height="100%" />
           </div>
         </div>
       )}
