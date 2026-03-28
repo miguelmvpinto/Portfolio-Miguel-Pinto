@@ -11,7 +11,6 @@ import {
 } from "react-icons/fa";
 import heroImg from "./assets/hero.png";
 import "./App.css";
-
 import { useEffect, useState } from "react";
 
 function App() {
@@ -62,7 +61,7 @@ function App() {
     <>
       <nav className="navbar">
         <div className="logo text-color font-mono font-bold text-lg">
-          {"<dev />"}
+          {"<dev>"}
         </div>
 
         <ul>
@@ -129,7 +128,7 @@ function App() {
               onClick={() => scrollToSection("#projects")}
               className="btn-primary"
             >
-              View Projects →
+              View Projects
             </button>
             <button
               onClick={() => scrollToSection("#contact")}
@@ -191,42 +190,75 @@ function App() {
 
           <div className="tech-grid">
             <div className="tech-card">
-              ☕<span>Java</span>
-            </div>
-            <div className="tech-card">
-              JS<span>JavaScript</span>
-            </div>
-            <div className="tech-card">
-              TS<span>TypeScript</span>
-            </div>
-            <div className="tech-card">
-              C#<span>C#</span>
+              <img
+                src="https://logo-teka.com/wp-content/uploads/2025/09/java-icon-logo.png"
+                alt="Java"
+              />
+              <span>Java</span>
             </div>
 
             <div className="tech-card">
-              🐍<span>Python</span>
-            </div>
-            <div className="tech-card">
-              ⚛️<span>React</span>
-            </div>
-            <div className="tech-card">
-              ⬢<span>Node.js</span>
-            </div>
-            <div className="tech-card">
-              🎮<span>Unity</span>
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/960px-Logo_C_sharp.svg.png"
+                alt="C#"
+              />
+              <span>C#</span>
             </div>
 
             <div className="tech-card">
-              🗄️<span>SQL</span>
+              <img src="https://cdn.simpleicons.org/python" alt="Python" />
+              <span>Python</span>
             </div>
+
             <div className="tech-card">
-              🌿<span>Git</span>
+              <img
+                src="https://cdn.simpleicons.org/javascript"
+                alt="JavaScript"
+              />
+              <span>JavaScript</span>
             </div>
+
             <div className="tech-card">
-              &lt;/&gt;<span>HTML/CSS</span>
+              <img src="https://cdn.simpleicons.org/html5" alt="HTML" />
+              <span>HTML</span>
             </div>
+
             <div className="tech-card">
-              🐳<span>Docker</span>
+              <img
+                src="https://github.com/CSS-Next/logo.css/raw/main/css.svg"
+                alt="CSS"
+              />
+              <span>CSS</span>
+            </div>
+
+            <div className="tech-card">
+              <img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js" />
+              <span>Node.js</span>
+            </div>
+
+            <div className="tech-card">
+              <img src="https://cdn.simpleicons.org/unity" alt="Unity" />
+              <span>Unity</span>
+            </div>
+
+            <div className="tech-card">
+              <img src="https://cdn.simpleicons.org/godotengine" alt="Godot" />
+              <span>Godot</span>
+            </div>
+
+            <div className="tech-card">
+              <img src="https://cdn.simpleicons.org/github" alt="GitHub" />
+              <span>GitHub</span>
+            </div>
+
+            <div className="tech-card">
+              <img src="https://cdn.simpleicons.org/jira" alt="Jira" />
+              <span>Jira</span>
+            </div>
+
+            <div className="tech-card">
+              <img src="https://cdn.simpleicons.org/figma" alt="Figma" />
+              <span>Figma</span>
             </div>
           </div>
         </div>
@@ -242,29 +274,25 @@ function App() {
           <div className="projects-grid">
             <div className="project-card">
               <img src="https://via.placeholder.com/400x200" alt="" />
-              <h3>Analytics Dashboard</h3>
+              <h3>Formula Clicker</h3>
               <p>
-                A real-time data visualization dashboard for monitoring KPIs and
-                business metrics.
+                A 2D clicker game build with Godot, where you can choose your
+                path.
               </p>
               <div className="tags">
-                <span>React</span>
-                <span>TypeScript</span>
-                <span>Node.js</span>
+                <span>Godot</span>
+                <span>GDScript</span>
               </div>
             </div>
 
             <div className="project-card">
               <img src="https://via.placeholder.com/400x200" alt="" />
-              <h3>Shadow Realm</h3>
-              <p>
-                A 3D exploration game built with Unity featuring procedural
-                terrain.
-              </p>
+              <h3>MyTanks</h3>
+              <p>A Wikipedia about tanks.</p>
               <div className="tags">
-                <span>Unity</span>
-                <span>C#</span>
-                <span>Blender</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>PHP</span>
               </div>
             </div>
 
@@ -291,23 +319,6 @@ function App() {
               src="https://github-readme-activity-graph.vercel.app/graph?username=miguelmvpinto&theme=react-dark"
               alt="GitHub Activity"
             />
-          </div>
-
-          <div className="github-activity">
-            <h3>Recent Activity</h3>
-
-            {events.length === 0 ? (
-              <p>Loading activity...</p>
-            ) : (
-              <div className="activity-list">
-                {events.map((event, index) => (
-                  <div key={index} className="activity-card">
-                    <span className="activity-type">{event.type}</span>
-                    <p>{event.repo?.name}</p>
-                  </div>
-                ))}
-              </div>
-            )}
           </div>
         </div>
       </section>
@@ -382,7 +393,11 @@ function App() {
       )}
 
       <footer className="footer">
-        <p>&copy; 2026 Miguel Pinto. All rights reserved.</p>
+        <div className="footer-left">{"<dev />"}</div>
+
+        <div className="footer-right">
+          © 2026 Miguel Pinto. All rights reserved.
+        </div>
       </footer>
     </>
   );
