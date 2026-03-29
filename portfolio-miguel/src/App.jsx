@@ -191,73 +191,73 @@ function App() {
           <div className="tech-grid">
             <div className="tech-card">
               <img
-                src="https://logo-teka.com/wp-content/uploads/2025/09/java-icon-logo.png"
-                alt="Java"
+                src="https://cdn.simpleicons.org/C/19e6d5"
+                alt="C"
               />
-              <span>Java</span>
+              <span>C</span>
             </div>
 
             <div className="tech-card">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/960px-Logo_C_sharp.svg.png"
-                alt="C#"
-              />
-              <span>C#</span>
-            </div>
-
-            <div className="tech-card">
-              <img src="https://cdn.simpleicons.org/python" alt="Python" />
+              <img src="https://cdn.simpleicons.org/python/19e6d5" alt="Python" />
               <span>Python</span>
             </div>
 
             <div className="tech-card">
               <img
-                src="https://cdn.simpleicons.org/javascript"
+                src="https://cdn.simpleicons.org/javascript/19e6d5"
                 alt="JavaScript"
               />
               <span>JavaScript</span>
             </div>
 
             <div className="tech-card">
-              <img src="https://cdn.simpleicons.org/html5" alt="HTML" />
+              <img
+                src="https://cdn.simpleicons.org/mysql/19e6d5"
+                alt="MySQL"
+              />
+              <span>MySQL</span>
+            </div>
+
+            <div className="tech-card">
+              <img src="https://cdn.simpleicons.org/html5/19e6d5" alt="HTML" />
               <span>HTML</span>
             </div>
 
             <div className="tech-card">
               <img
-                src="https://github.com/CSS-Next/logo.css/raw/main/css.svg"
+                src="https://cdn.simpleicons.org/css/19e6d5"
                 alt="CSS"
               />
               <span>CSS</span>
             </div>
 
             <div className="tech-card">
-              <img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js" />
+              <img src="https://cdn.simpleicons.org/nodedotjs/19e6d5" alt="Node.js" />
               <span>Node.js</span>
             </div>
 
             <div className="tech-card">
-              <img src="https://cdn.simpleicons.org/unity" alt="Unity" />
+              <img src="https://cdn.simpleicons.org/unity/19e6d5" alt="Unity" />
               <span>Unity</span>
             </div>
 
             <div className="tech-card">
-              <img src="https://cdn.simpleicons.org/godotengine" alt="Godot" />
+              <img src="https://cdn.simpleicons.org/godotengine/19e6d5" alt="Godot" />
               <span>Godot</span>
             </div>
 
             <div className="tech-card">
-              <img src="https://cdn.simpleicons.org/github" alt="GitHub" />
+              <img src="https://cdn.simpleicons.org/github/19e6d5" alt="GitHub" />
               <span>GitHub</span>
             </div>
 
             <div className="tech-card">
-              <img src="https://cdn.simpleicons.org/jira" alt="Jira" />
+              <img src="https://cdn.simpleicons.org/jira/19e6d5" alt="Jira" />
               <span>Jira</span>
             </div>
 
             <div className="tech-card">
-              <img src="https://cdn.simpleicons.org/figma" alt="Figma" />
+              <img src="https://cdn.simpleicons.org/figma/19e6d5" alt="Figma" />
               <span>Figma</span>
             </div>
           </div>
@@ -272,40 +272,100 @@ function App() {
           </p>
 
           <div className="projects-grid">
-            <div className="project-card">
-              <img src="https://via.placeholder.com/400x200" alt="" />
-              <h3>Formula Clicker</h3>
-              <p>
-                A 2D clicker game build with Godot, where you can choose your
-                path.
-              </p>
-              <div className="tags">
-                <span>Godot</span>
-                <span>GDScript</span>
-              </div>
-            </div>
+            <a
+              href="https://github.com/miguelmvpinto/FormulaClicker"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
+              <div className="project-card">
+                <div className="project-image">
+                  <img src="formula-clicker.jpg" alt="Formula Clicker" />
+                </div>
 
-            <div className="project-card">
-              <img src="https://via.placeholder.com/400x200" alt="" />
-              <h3>MyTanks</h3>
-              <p>A Wikipedia about tanks.</p>
-              <div className="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>PHP</span>
-              </div>
-            </div>
+                <div className="project-status dev">
+                  <span className="dot"></span>
+                  In Development
+                </div>
 
-            <div className="project-card">
-              <img src="https://via.placeholder.com/400x200" alt="" />
-              <h3>TaskFlow</h3>
-              <p>A minimalist task management app with smart categorization.</p>
-              <div className="tags">
-                <span>React Native</span>
-                <span>TypeScript</span>
-                <span>Firebase</span>
+                <div className="project-content">
+                  <h3 style={{ color: "#19e6d5" }}>Formula Clicker</h3>
+                  <p>
+                    A 2D clicker game built with Godot, where you can choose
+                    your path.
+                  </p>
+
+                  <div className="tags">
+                    <span>Godot</span>
+                    <span>GDScript</span>
+                  </div>
+                </div>
               </div>
-            </div>
+            </a>
+
+            <a
+              href="https://github.com/miguelmvpinto/MyTanks"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
+              <div className="project-card">
+                <div className="project-image">
+                  <img src="mytanks.jpg" alt="MyTanks" />
+                </div>
+
+                <div className="project-status dev">
+                  <span className="dot"></span>
+                  In Development
+                </div>
+
+                <div className="project-content">
+                  <h3 style={{ color: "#19e6d5" }}>MyTanks</h3>
+                  <p>
+                    A Wikipedia about tanks, built with PHP. Explore different
+                    tank models and their history.
+                  </p>
+
+                  <div className="tags">
+                    <span>PHP</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>Javascript</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
+              <div className="project-card">
+                <div className="project-image">
+                  <img src="lorem-ipsum.jpg" alt="Lorem Ipsum" />
+                </div>
+
+                <div className="project-status archived">
+                  <span className="dot"></span>
+                  Archived
+                </div>
+
+                <div className="project-content">
+                  <h3 style={{ color: "#19e6d5" }}>Lorem Ipsum</h3>
+                  <p>
+                    Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolor
+                  </p>
+
+                  <div className="tags">
+                    <span>Godot</span>
+                    <span>GDScript</span>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -313,10 +373,14 @@ function App() {
       <section id="activity" className="section github-section">
         <div className="github-container">
           <h2 className="section-title">GitHub Activity</h2>
+          <p className="projects-subtitle">
+            The latest activity from my Gitub profile, showcasing my recent
+            contributions and projects.
+          </p>
 
           <div className="github-card">
             <img
-              src="https://github-readme-activity-graph.vercel.app/graph?username=miguelmvpinto&theme=react-dark"
+              src="https://github-readme-activity-graph.vercel.app/graph?username=miguelmvpinto&theme=react-dark&line=19e6d5&point=19e6d5&area=true&color=19e6d5&title_color=19e6d5&hide_border=true"
               alt="GitHub Activity"
             />
           </div>
@@ -351,7 +415,7 @@ function App() {
               <FaLinkedin /> LinkedIn
             </a>
 
-            <button className="btn-secondary" onClick={() => setShowCV(true)}>
+            <button className="contact-link" onClick={() => setShowCV(true)}>
               <FaFileAlt /> Curriculum
             </button>
           </div>
