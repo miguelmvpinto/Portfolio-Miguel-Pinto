@@ -8,8 +8,14 @@ import {
   FaLinkedin,
   FaChartLine,
   FaFileAlt,
+  FaGraduationCap,
+  FaLaptopCode,
+  FaTools,
+  FaShieldAlt,
+  FaCar,
+  FaCogs,
+  FaRocket,
 } from "react-icons/fa";
-import heroImg from "./assets/hero.png";
 import "./App.css";
 import { useEffect, useState } from "react";
 
@@ -141,7 +147,7 @@ function App() {
 
         <div className="hero-image">
           <div className="circle">
-            <img src={heroImg} alt="profile" />
+            <img src="profile.png" alt="profile" />
           </div>
         </div>
       </section>
@@ -152,18 +158,20 @@ function App() {
             <h2 className="section-title">About Me</h2>
 
             <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation occaecat cupidatat
-              non proident, sunt in culpa qui officia deserunt mollit anim id
-              est laborum."
+              Hey, I'm Miguel, a developer who likes building clean, modern, and
+              interactive applications.
             </p>
 
             <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat."
+              I'm finishing my degree in Computer Engineering and have worked
+              across both web and game development. I enjoy creating projects
+              that are functional but also visually engaging and easy to use.
+            </p>
+
+            <p>
+              I'm currently looking for opportunities to grow, learn, and
+              contribute to real projects while continuing to push my limits as
+              a developer.
             </p>
           </div>
 
@@ -171,11 +179,33 @@ function App() {
             <h3>Quick Facts</h3>
 
             <ul>
-              <li>🎓 CS degree with focus on Software Engineering</li>
-              <li>💻 3+ years building web applications</li>
-              <li>🎮 Game development (Unity & C#)</li>
-              <li>🌐 Open source contributor</li>
-              <li>📚 Always learning, always building</li>
+              <li>
+                <FaGraduationCap /> Final-year Computer Engineering student
+              </li>
+
+              <li>
+                <FaLaptopCode /> Focused on Web & Game Development
+              </li>
+
+              <li>
+                <FaTools /> Experience with JavaScript, Node.js, Unity
+              </li>
+
+              <li>
+                <FaShieldAlt /> Background in Cybersecurity
+              </li>
+
+              <li>
+                <FaCar /> Formula 1 and car enthusiast
+              </li>
+
+              <li>
+                <FaCogs /> Tank & military tech enjoyer
+              </li>
+
+              <li>
+                <FaRocket /> Always learning and building new projects
+              </li>
             </ul>
           </div>
         </div>
@@ -190,15 +220,15 @@ function App() {
 
           <div className="tech-grid">
             <div className="tech-card">
-              <img
-                src="https://cdn.simpleicons.org/C/19e6d5"
-                alt="C"
-              />
+              <img src="https://cdn.simpleicons.org/C/19e6d5" alt="C" />
               <span>C</span>
             </div>
 
             <div className="tech-card">
-              <img src="https://cdn.simpleicons.org/python/19e6d5" alt="Python" />
+              <img
+                src="https://cdn.simpleicons.org/python/19e6d5"
+                alt="Python"
+              />
               <span>Python</span>
             </div>
 
@@ -211,10 +241,7 @@ function App() {
             </div>
 
             <div className="tech-card">
-              <img
-                src="https://cdn.simpleicons.org/mysql/19e6d5"
-                alt="MySQL"
-              />
+              <img src="https://cdn.simpleicons.org/mysql/19e6d5" alt="MySQL" />
               <span>MySQL</span>
             </div>
 
@@ -224,15 +251,15 @@ function App() {
             </div>
 
             <div className="tech-card">
-              <img
-                src="https://cdn.simpleicons.org/css/19e6d5"
-                alt="CSS"
-              />
+              <img src="https://cdn.simpleicons.org/css/19e6d5" alt="CSS" />
               <span>CSS</span>
             </div>
 
             <div className="tech-card">
-              <img src="https://cdn.simpleicons.org/nodedotjs/19e6d5" alt="Node.js" />
+              <img
+                src="https://cdn.simpleicons.org/nodedotjs/19e6d5"
+                alt="Node.js"
+              />
               <span>Node.js</span>
             </div>
 
@@ -242,12 +269,18 @@ function App() {
             </div>
 
             <div className="tech-card">
-              <img src="https://cdn.simpleicons.org/godotengine/19e6d5" alt="Godot" />
+              <img
+                src="https://cdn.simpleicons.org/godotengine/19e6d5"
+                alt="Godot"
+              />
               <span>Godot</span>
             </div>
 
             <div className="tech-card">
-              <img src="https://cdn.simpleicons.org/github/19e6d5" alt="GitHub" />
+              <img
+                src="https://cdn.simpleicons.org/github/19e6d5"
+                alt="GitHub"
+              />
               <span>GitHub</span>
             </div>
 

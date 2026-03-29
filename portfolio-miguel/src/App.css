@@ -295,9 +295,22 @@ body {
 }
 
 .about-card li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 12px;
   color: #ccc;
   font-size: 14px;
+}
+
+.about-card li svg {
+  color: #19e6d5;
+  min-width: 16px;
+}
+
+.about-card li:hover svg {
+  transform: scale(1.2);
+  transition: 0.2s;
 }
 
 @media (max-width: 900px) {
