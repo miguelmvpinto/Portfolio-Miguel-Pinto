@@ -22,10 +22,12 @@ I am a passionate software developer focused on building modern web applications
 ## Tech Stack
 
 ### 💻 Languages
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![C](https://img.shields.io/badge/C-239120?style=for-the-badge&logo=c&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+### 🛢 Data
+![MySQL](https://img.shields.io/badge/MYSQL-19e6d5?style=for-the-badge&logo=mysql&logoColor=white)
 
 ### 🌐 Web
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -47,6 +49,8 @@ I am a passionate software developer focused on building modern web applications
 * Modern UI design
 * Smooth scrolling navigation
 * Responsive layout
+* Showcase Project
+* Project Status
 * GitHub activity integration
 * Contact modal
 
@@ -56,13 +60,13 @@ Here are some of my side projects as a developer
 
 ### 🏎️ Formula Clicker
 
-A Clicker Car game where you can choose your path as a driver.
+A 2D clicker game built with Godot, where you can choose your path.
 
 [![GitHub](https://img.shields.io/badge/View%20Project-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/miguelmvpinto/FormulaClicker)
 
 ### 🪖 MyTanks
 
-A Wikipedia about tanks.
+A Wikipedia about tanks, built with PHP. Explore different tank models and their history.
 
 [![GitHub](https://img.shields.io/badge/View%20Project-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/miguelmvpinto/MyTanks)
 
