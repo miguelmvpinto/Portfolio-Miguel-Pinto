@@ -344,7 +344,7 @@ function App() {
             >
               <div className="project-card">
                 <div className="project-image">
-                  <img src="mytanks.jpg" alt="MyTanks" />
+                  <img src="MyTanks.png" alt="MyTanks" />
                 </div>
 
                 <div className="project-status dev">
@@ -370,31 +370,30 @@ function App() {
             </a>
 
             <a
-              href=""
+              href="https://github.com/miguelmvpinto/Nobus-bot"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"
             >
               <div className="project-card">
                 <div className="project-image">
-                  <img src="lorem-ipsum.jpg" alt="Lorem Ipsum" />
+                  <img src="Nobus-bot.jpg" alt="Nobus bot" />
                 </div>
 
-                <div className="project-status archived">
+                <div className="project-status live">
                   <span className="dot"></span>
-                  Archived
+                  Live
                 </div>
 
                 <div className="project-content">
-                  <h3 style={{ color: "#19e6d5" }}>Lorem Ipsum</h3>
+                  <h3 style={{ color: "#19e6d5" }}>Nobus bot</h3>
                   <p>
-                    Lorem, ipsum dolor. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Dolor
+                    A simple bot built with Python. It can perform administration
+                    tasks and interact with users.
                   </p>
 
                   <div className="tags">
-                    <span>Godot</span>
-                    <span>GDScript</span>
+                    <span>Python</span>
                   </div>
                 </div>
               </div>
