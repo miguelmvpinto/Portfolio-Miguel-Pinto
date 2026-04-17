@@ -70,6 +70,12 @@ A Wikipedia about tanks, built with PHP. Explore different tank models and their
 
 [![GitHub](https://img.shields.io/badge/View%20Project-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/miguelmvpinto/MyTanks)
 
+### 🤖 Nobus Bot
+
+A Discord bot, administration and music.
+
+[![GitHub](https://img.shields.io/badge/View%20Project-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/miguelmvpinto/Nobus-bot)
+
 ## Contact
 
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:miguelmvpinto@gmail.com)
