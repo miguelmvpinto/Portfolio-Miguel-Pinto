@@ -18,6 +18,7 @@ import {
 } from "react-icons/fa";
 import "./App.css";
 import { useEffect, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [showCV, setShowCV] = useState(false);
@@ -65,6 +66,7 @@ function App() {
 
   return (
     <>
+      <Analytics />
       <nav className="navbar">
         <div className="logo text-color font-mono font-bold text-lg">
           {"<dev>"}
